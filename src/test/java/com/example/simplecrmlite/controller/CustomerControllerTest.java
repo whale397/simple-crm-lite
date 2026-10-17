@@ -52,6 +52,7 @@ public class CustomerControllerTest {
         // Mock the repository to return test data
         when(customerRepository.findAll()).thenReturn(customers);
 
+        // testing
         // Act & Assert - Make request and verify response
         mockMvc.perform(get("/customers")
                 .contentType(MediaType.APPLICATION_JSON))
